@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #ef8026;
+}
+
+button {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo {
+  padding:  5% 0 5% 0;
+}
+
+.logo img {
+  width: 50%;
+}
+
+.list-links{
+  display: none;
+}
+
+.hamburger {
+  padding: 2% 2% 1% 2%;
+  border: #1c2544 1px solid;
+  border-radius: 8px;
+}
+@media only screen and (min-width: 481px) {
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #1c2544;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #fff;
+    width: 30%;
+    padding: 1%;
+  }
+
+  .logo img {
+    width: 70%;
+  }
+
+  .list-links {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 80%;
+    padding-right: 2%;
+  }
+
+  .list-links li {
+    padding-right: 3%;
+    font-size: xx-small;
+  }
+
+  .facebook img,
+  .instagram img {
+    height: 20px;
+  }
+
+  .facebook {
+    padding-right: 1%;
+  }
+
+  .instagram {
+    border-left: 1px solid #fff;
+    padding-left: 1%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .list-links li {
+    padding-right: 2%;
+    font-size: x-small;
+  }
+  
+  .facebook img,
+  .instagram img {
+    height: 25px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .list-links li {
+    font-size: small;
+  }
+}
