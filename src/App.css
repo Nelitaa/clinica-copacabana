@@ -181,6 +181,14 @@ nav {
   padding-bottom: 2%;
 }
 
+/* Care and Protection*/
+.schedule-appointment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
 @media only screen and (min-width: 481px) {
   /* Header */
   .hamburger {
@@ -231,6 +239,21 @@ nav {
   .instagram {
     border-left: 1px solid #fff;
     padding-left: 1%;
+  }
+
+  /* Care and Protection*/
+  .schedule-appointment {
+    display: flex;
+  }
+
+  .schedule-appointment button {
+    width: 50%;
+    height: 50px;
+    border: none;
+  }
+
+  .schedule-appointment button img {
+    width: 100%;
   }
 }
 
@@ -329,5 +352,15 @@ nav {
 
   .list-information li {
     padding-bottom: 5%;
+  }
+
+  /* Care and Protection*/
+  .schedule-appointment {
+    justify-content: end;
+    padding: 1%;
+  }
+
+  .schedule-appointment button {
+    width: 30%;
   }
 }

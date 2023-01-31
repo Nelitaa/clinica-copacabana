@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ContainerInformation = (props) => {
-  const { title, icon, subTitle, list, subTitle2, list2, paragraph, paragraph2 } = props;
+  const { title, icon, subTitle, list, subTitle2, list2, paragraph, paragraph2, paragraph3 } = props;
 
   return (
   <div className="container-information">
@@ -10,8 +10,8 @@ const ContainerInformation = (props) => {
       <img className={icon ? "icon-information-title" : "hide-icon-information-title"} src={icon} alt="" />
       <h2 className="information-title">{title}</h2>
     </div>
-    <p>{paragraph}</p>
     <h3 className={subTitle ? "subTitle-information" : "hide-list-information"}>{subTitle}</h3>
+    <p>{paragraph}</p>
     <ul className={list ? "list-information" : "hide-list-information"}>
       {list && list.map((item, index) => <li key={index}>{item}</li>)}
     </ul>
@@ -20,6 +20,7 @@ const ContainerInformation = (props) => {
       {list2 && list.map((item, index) => <li key={index}>{item}</li>)}
     </ul>
     <p className='paragraph2'>{paragraph2}</p>
+    <p className={paragraph3 ? "paragraph2" : "hide-list-information"}>{paragraph3}</p>
   </div>
   );
 };
@@ -27,7 +28,7 @@ const ContainerInformation = (props) => {
 export default ContainerInformation;
 
 ContainerInformation.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   icon: PropTypes.string,
   paragraph: PropTypes.string,
   list: PropTypes.array,
@@ -35,4 +36,5 @@ ContainerInformation.propTypes = {
   list2: PropTypes.array,
   subTitle: PropTypes.string,
   subTitle2: PropTypes.string,
+  paragraph3: PropTypes.string,
 };

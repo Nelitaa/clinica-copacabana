@@ -4,7 +4,7 @@ import maternity from '../assets/services/maternityIcon.png';
 import specialties from '../assets/services/specialtiesIcon.png';
 import intensiveCare from '../assets/services/intensiveCareIcon.png';
 import internment from '../assets/services/internmentIcon.png';
-import CareAndPrevention from '../assets/services/CareAndPreventionIcon.png';
+import careAndPrevention from '../assets/services/careAndPreventionIcon.png';
 import emergencies from '../assets/services/emergenciesIcon.png';
 import diagnosticStudies from '../assets/services/diagnosticStudiesIcon.png';
 import '../App.css'
@@ -44,7 +44,7 @@ const Services = () => {
     {
       id: 6,
       title: 'Cuidado y Prevención',
-      image: CareAndPrevention,
+      image: careAndPrevention,
       path: '/servicios/cuidado-y-prevencion',
     },
     {

@@ -9,6 +9,7 @@ import IntensiveCare from './pages/IntensiveCare';
 import Internment from './pages/Internment';
 import Emergencies from './pages/Emergencies';
 import DiagnosticStudies from './pages/DiagnosticStudies';
+import CareAndPrevention from './pages/CareAndPrevention';
 import './App.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/servicios/internacion" element={<Internment />} />
         <Route path="/servicios/emergencias" element={<Emergencies />} />
         <Route path="/servicios/estudios-diagnosticos" element={<DiagnosticStudies />} />
+        <Route path="/servicios/cuidado-y-prevencion" element={<CareAndPrevention />} />
         <Route path="/instalaciones" element={<Installations />} />
       </Routes>
     </div>
