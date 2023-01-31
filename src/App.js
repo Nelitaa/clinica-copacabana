@@ -6,6 +6,9 @@ import Queries from './pages/Queries';
 import Maternity from './pages/Maternity';
 import Specialties from './pages/Specialties';
 import IntensiveCare from './pages/IntensiveCare';
+import Internment from './pages/Internment';
+import Emergencies from './pages/Emergencies';
+import DiagnosticStudies from './pages/DiagnosticStudies';
 import './App.css';
 
 function App() {
@@ -18,6 +21,9 @@ function App() {
         <Route path="/servicios/maternidad" element={<Maternity />} />
         <Route path="/servicios/especialidades" element={<Specialties />} />
         <Route path="/servicios/cuidados-intensivos" element={<IntensiveCare />} />
+        <Route path="/servicios/internacion" element={<Internment />} />
+        <Route path="/servicios/emergencias" element={<Emergencies />} />
+        <Route path="/servicios/estudios-diagnosticos" element={<DiagnosticStudies />} />
         <Route path="/instalaciones" element={<Installations />} />
       </Routes>
     </div>
