@@ -79,10 +79,12 @@ nav {
 .container-information-title {
   display: flex;
   padding-bottom: 3%;
+  align-items: center;
 }
 
 .icon-information-title {
   display: flex;
+  width: 40px;
   height: 40px;
 }
 
@@ -160,6 +162,7 @@ nav {
   flex-direction: column;
   list-style-type: disc;
   padding-left: 5%;
+  padding-top: 5%;
 }
 
 .list-information li::marker {
