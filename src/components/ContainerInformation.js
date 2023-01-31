@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ContainerInformation = (props) => {
-  const { title, icon, list, paragraph, paragraph2 } = props;
+  const { title, icon, subTitle, list, subTitle2, list2, paragraph, paragraph2 } = props;
 
   return (
   <div className="container-information">
@@ -11,8 +11,13 @@ const ContainerInformation = (props) => {
       <h2 className="information-title">{title}</h2>
     </div>
     <p>{paragraph}</p>
+    <h3 className={subTitle ? "subTitle-information" : "hide-list-information"}>{subTitle}</h3>
     <ul className={list ? "list-information" : "hide-list-information"}>
       {list && list.map((item, index) => <li key={index}>{item}</li>)}
+    </ul>
+    <h3 className={subTitle2 ? "subTitle-information" : "hide-list-information"}>{subTitle2}</h3>
+    <ul className={list2 ? "list-information" : "hide-list-information"}>
+      {list2 && list.map((item, index) => <li key={index}>{item}</li>)}
     </ul>
     <p className='paragraph2'>{paragraph2}</p>
   </div>
@@ -27,4 +32,7 @@ ContainerInformation.propTypes = {
   paragraph: PropTypes.string,
   list: PropTypes.array,
   paragraph2: PropTypes.string,
+  list2: PropTypes.array,
+  subTitle: PropTypes.string,
+  subTitle2: PropTypes.string,
 };

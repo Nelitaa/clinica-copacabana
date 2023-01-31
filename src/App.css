@@ -99,6 +99,14 @@ nav {
   padding-left: 2%;
 }
 
+.subTitle-information {
+  font-size: x-large;
+  font-weight: bold;
+  color: #ef8026;
+  padding-bottom: 2%;
+  padding-top: 1%;
+}
+
 .paragraph2 {
   padding: 5% 0 5% 0;
 }
