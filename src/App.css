@@ -47,41 +47,89 @@ nav {
   border-radius: 8px;
 }
 
-/* Instalaciones */
-.container-pages {
+/* Installations */
+.installations-container {
   display: flex;
   flex-direction: column;
   padding: 5%;
   color: #7c8a9e;
 }
 
-.installation-title {
+/* Return Page */
+.return-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.return-container button {
+  display: flex;
+  align-items: center;
+  border: none;
+  font-size: x-small;
+  color: #7c8a9e;
+}
+
+.return-container button img {
+  width: 20px;
+  padding-right: 5%;
+}
+
+/* Container Information */
+.container-information-title {
   width: 50%;
   padding-bottom: 5%;
 }
 
-.container-back {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.paragraph-installations {
+.paragraph2 {
   padding: 5% 0 5% 0;
 }
 
-.container-images {
+/* Container Images */
+.images-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.installations-images {
+.photos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+/* Services */
+.services-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cards */
+.card {
+  box-shadow: 7px 7px 15px #1c2544; 
+  width: 200px;
+  height: 100px;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+.card a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: 60px;
+  padding-bottom: 5%;
+}
+
+.card h2 {
+  color: #1c2544;
+  font-size: medium;
+
 }
 
 @media only screen and (min-width: 481px) {
@@ -149,18 +197,20 @@ nav {
     height: 25px;
   }
 
-  /* Instalaciones */
-  .container-information {
+  /* Installations */
+  .installations-content {
     display: flex;
     flex-direction: row;
+    padding-right: 5%;
+  }
+
+  /* Container information */
+  .container-information {
     padding: 2% 5% 5% 5%;
   }
 
-  .container-images {
-    padding-left: 10%;
-  }
-
-  .container-back {
+  /* Return Page */
+  .return-container {
     padding-right: 5%;
   }
 }
@@ -169,5 +219,14 @@ nav {
   /* Header */
   .list-links li {
     font-size: medium;
+  }
+
+  /* Return Page */
+  .return-container button {
+    font-size: small;
+  }
+
+  .return-container button img {
+    width: 30px;
   }
 }
