@@ -105,6 +105,7 @@ nav {
   color: #ef8026;
 }
 
+.subTitle-admission,
 .subTitle-information {
   font-size: x-large;
   font-weight: bold;
@@ -239,6 +240,14 @@ nav {
 .title-level3 {
   color: #1c2544;
   padding-top: 2%;
+}
+
+/* Admission page */
+.company-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 @media only screen and (min-width: 481px) {
@@ -389,6 +398,17 @@ nav {
   .contact-logo {
     width: 40%;
     padding: 0 0 5% 5%;
+  }
+
+  /* Admission Page*/
+  .company-logos, 
+  .subTitle-admission {
+    padding-left: 5%;
+  }
+
+  .company-logos {
+    width: 90%;
+    padding-bottom: 2%;
   }
 }
 

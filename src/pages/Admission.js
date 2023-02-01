@@ -31,10 +31,12 @@ const Admission = () => {
         <ContainerInformation title={title2} paragraph={paragraph3} paragraph2={paragraph4} paragraph3={paragraph5}  />
         <ContainerImages photo={admissionPhoto2} />
       </div>
+      <br />
       <div>
-        <h3>Seguros y empresas</h3>
-        <img src={companyLogos} alt="Seguros y empresas" />
+        <h3 className="subTitle-admission">Seguros y empresas</h3>
+        <img className="company-logos" src={companyLogos} alt="Seguros y empresas" />
       </div>
+      <br />
       <div className="installations-content">
         <ContainerInformation title={title3} paragraph={paragraph6} paragraph2={paragraph7} paragraph3={paragraph8}  />
         <ContainerImages photo={admissionPhoto3} />
