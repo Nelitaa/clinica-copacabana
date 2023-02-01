@@ -8,7 +8,7 @@ const ContainerInformation = (props) => {
   <div className="container-information">
     <div className="container-information-title">
       <img className={icon ? "icon-information-title" : "hide-icon-information-title"} src={icon} alt="" />
-      <h2 className="information-title">{title}</h2>
+      <h2 className={title === 'Pacientes Asegurados' ? "information-title-orange" : "information-title"}>{title}</h2>
     </div>
     <h3 className={subTitle ? "subTitle-information" : "hide-list-information"}>{subTitle}</h3>
     <p>{paragraph}</p>

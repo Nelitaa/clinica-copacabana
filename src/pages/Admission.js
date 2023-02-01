@@ -26,6 +26,7 @@ const Admission = () => {
         <ContainerInformation title={title} paragraph={paragraph} paragraph2={paragraph2}  />
         <ContainerImages photo={admissionPhoto1} />
       </div>
+      <br />
       <div className="installations-content">
         <ContainerInformation title={title2} paragraph={paragraph3} paragraph2={paragraph4} paragraph3={paragraph5}  />
         <ContainerImages photo={admissionPhoto2} />
