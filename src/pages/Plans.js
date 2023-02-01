@@ -18,7 +18,7 @@ const  MaternityPlan  =  ()  =>  {
     <section className="installations-container">
       <div className="installations-content">
         <ContainerInformation title={title} subTitle={subTitle} list={list} logo={maternityPlanLogo} />
-        <ContainerImages title={title} photo={plansPhoto} icon={whatsappInformationIcon} />
+        <ContainerImages title={title} photo={plansPhoto} iconContact={whatsappInformationIcon} />
       </div>
       <div className="plans-container">
         <ContainerInformation subTitle={subTitle2} list={list2} />

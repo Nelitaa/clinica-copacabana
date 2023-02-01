@@ -13,6 +13,7 @@ import CareAndPrevention from './pages/CareAndPrevention';
 import Plans from './pages/Plans';
 import Admission from './pages/Admission';
 import Contact from './pages/Contact';
+import History from './pages/History';
 import './App.css';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path="/planes" element={<Plans />} /> 
         <Route path="/admision" element={<Admission />} /> 
         <Route path="/contacto" element={<Contact />} /> 
+        <Route path="/nuestra-historia" element={<History />} /> 
       </Routes>
     </div>
   );

@@ -20,6 +20,7 @@ a:hover {
 button {
   background-color: #fff;
   cursor: pointer;
+  border: none;
 }
 
 /* Header */
@@ -33,7 +34,7 @@ nav {
   padding:  5% 0 5% 0;
 }
 
-.whatsapp-button,
+.icon-contact,
 .logo img {
   width: 50%;
 }
@@ -166,7 +167,7 @@ nav {
   padding-bottom: 5%;
 }
 
-.card h2 {
+.card h3 {
   color: #1c2544;
   font-size: medium;
   text-align: center;
@@ -254,6 +255,36 @@ nav {
 .logo-icon {
   width: 50%;
   padding: 5%;
+}
+
+/* Our History page */
+.front-page-history-container {
+  background-image: url(./assets/history/historyPhoto.png);
+  opacity: 0.5;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+
+.history-mission-vision-container {
+  display: flex;
+  align-items: center;
+  column-gap: 5%;
+  padding: 5%;
+}
+
+.mission-vision-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mission-vision {
+  display: flex;
+  padding: 2%;
+}
+
+.mission-vision img {
+  padding-right: 2%;
 }
 
 @media only screen and (min-width: 481px) {

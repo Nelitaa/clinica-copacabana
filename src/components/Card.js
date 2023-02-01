@@ -1,4 +1,3 @@
-import React from "react";
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +8,7 @@ const Card = (props) => {
     <div className="card">
       <Link to={path}>
         <img src={image} alt={title} />
-        <h2>{title}</h2>
+        <h3>{title}</h3>
       </Link>
     </div>
   );

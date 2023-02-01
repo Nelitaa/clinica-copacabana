@@ -1,28 +1,18 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import '../App.css'
+import Title from './Title';
 
 const ContainerInformation = (props) => {
   const { title, icon, subTitle, list, subTitle2, list2, paragraph, paragraph2, paragraph3, logo } = props;
 
   return (
   <div className="container-information">
-    <div className="container-title">
-      <img className={icon ? "icon-title" : "hide"} src={icon} alt={title} />
-      <h2 className={title === 'Pacientes Asegurados' ? "title-orange" : "title"}>{title}</h2>
-    </div>
+    <Title title={title} icon={icon} />
     <img className={logo ? "logo-icon" : "hide"} src={logo} alt={title} />
     <h3 className={subTitle ? "subTitle-information" : "hide-list-information"}>{subTitle}</h3>
     <p>{paragraph}</p>
     <ul className={list ? "list-information" : "hide-list-information"}>
       {list && list.map((item, index) => <li key={index}>{item}</li>)}
     </ul>
-    <h3 className={subTitle2 ? "subTitle-information" : "hide-list-information"}>{subTitle2}</h3>
-    <ul className={list2 ? "list-information" : "hide-list-information"}>
-      {list2 && list.map((item, index) => <li key={index}>{item}</li>)}
-    </ul>
-    <p className='paragraph2'>{paragraph2}</p>
-    <p className={paragraph3 ? "paragraph2" : "hide-list-information"}>{paragraph3}</p>
   </div>
   );
 };
