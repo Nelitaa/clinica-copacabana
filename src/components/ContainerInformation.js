@@ -1,15 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../App.css'
 
 const ContainerInformation = (props) => {
-  const { title, icon, subTitle, list, subTitle2, list2, paragraph, paragraph2, paragraph3 } = props;
+  const { title, icon, subTitle, list, subTitle2, list2, paragraph, paragraph2, paragraph3, logo } = props;
 
   return (
   <div className="container-information">
-    <div className="container-information-title">
-      <img className={icon ? "icon-information-title" : "hide-icon-information-title"} src={icon} alt="" />
-      <h2 className={title === 'Pacientes Asegurados' ? "information-title-orange" : "information-title"}>{title}</h2>
+    <div className="container-title">
+      <img className={icon ? "icon-title" : "hide"} src={icon} alt={title} />
+      <h2 className={title === 'Pacientes Asegurados' ? "title-orange" : "title"}>{title}</h2>
     </div>
+    <img className={logo ? "logo-icon" : "hide"} src={logo} alt={title} />
     <h3 className={subTitle ? "subTitle-information" : "hide-list-information"}>{subTitle}</h3>
     <p>{paragraph}</p>
     <ul className={list ? "list-information" : "hide-list-information"}>
@@ -37,4 +39,5 @@ ContainerInformation.propTypes = {
   subTitle: PropTypes.string,
   subTitle2: PropTypes.string,
   paragraph3: PropTypes.string,
+  logo: PropTypes.string,
 };

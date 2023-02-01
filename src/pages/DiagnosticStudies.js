@@ -17,7 +17,7 @@ const DiagnosticStudies = () => {
       <ReturnPage />
       <div className="installations-content">
         <ContainerInformation title={title} icon={diagnosticStudiesIcon} list={list} subTitle={subTitle} subTitle2={subTitle2} list2={list2} />
-        <ContainerImages photo={diagnosticStudiesPhoto} />
+        <ContainerImages title={title} photo={diagnosticStudiesPhoto} />
       </div>
     </section>
   );

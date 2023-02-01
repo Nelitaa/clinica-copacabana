@@ -16,7 +16,7 @@ const IntensiveCare = () => {
       <ReturnPage />
       <div className="installations-content">
         <ContainerInformation title={title} icon={intensiveCareIcon} paragraph={paragraph} list={list} paragraph2={paragraph2} />
-        <ContainerImages photo={intensiveCarePhoto} />
+        <ContainerImages title={title} photo={intensiveCarePhoto} />
       </div>
     </section>
   );

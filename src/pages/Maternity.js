@@ -15,7 +15,7 @@ const Maternity = () => {
       <ReturnPage />
       <div className="installations-content">
         <ContainerInformation title={title} icon={maternityIcon} paragraph={paragraph} paragraph2={paragraph2} />
-        <ContainerImages photo={maternityPhoto} />
+        <ContainerImages title={title} photo={maternityPhoto} />
       </div>
     </section>
   );

@@ -9,10 +9,12 @@ import whatsappButton from '../assets/contact/whatsappButton.png';
 import '../App.css'
 
 const Contact = () => {
+  const title = 'Contáctanos';
+  
   return (
     <section className="contact-container">
       <div className="contact-content-left">
-        <h2 className="information-title">Contáctanos</h2>
+        <h2 className={title === 'Pacientes Asegurados' ? "title-orange" : "title"}>{title}</h2>
         <img className="contact-logo" src={logo2} alt="Logo" />
         <ul className="contact-list" >
           <li>

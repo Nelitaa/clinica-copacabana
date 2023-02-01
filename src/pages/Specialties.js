@@ -14,7 +14,7 @@ const Specialties = () => {
       <ReturnPage />
       <div className="installations-content">
         <ContainerInformation title={title} icon={specialtiesIcon} list={list} />
-        <ContainerImages photo={specialtiesPhoto} />
+        <ContainerImages title={title} photo={specialtiesPhoto} />
       </div>
     </section>
   );

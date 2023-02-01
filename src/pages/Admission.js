@@ -24,12 +24,12 @@ const Admission = () => {
       <ReturnPage />
       <div className="installations-content">
         <ContainerInformation title={title} paragraph={paragraph} paragraph2={paragraph2}  />
-        <ContainerImages photo={admissionPhoto1} />
+        <ContainerImages title={title} photo={admissionPhoto1} />
       </div>
       <br />
       <div className="installations-content">
         <ContainerInformation title={title2} paragraph={paragraph3} paragraph2={paragraph4} paragraph3={paragraph5}  />
-        <ContainerImages photo={admissionPhoto2} />
+        <ContainerImages title={title} photo={admissionPhoto2} />
       </div>
       <br />
       <div>
@@ -39,7 +39,7 @@ const Admission = () => {
       <br />
       <div className="installations-content">
         <ContainerInformation title={title3} paragraph={paragraph6} paragraph2={paragraph7} paragraph3={paragraph8}  />
-        <ContainerImages photo={admissionPhoto3} />
+        <ContainerImages title={title} photo={admissionPhoto3} />
       </div>
     </section>
   );

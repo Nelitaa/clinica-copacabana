@@ -14,7 +14,7 @@ const Internment = () => {
       <ReturnPage />
       <div className="installations-content">
         <ContainerInformation title={title} icon={emergenciesIcon} paragraph={paragraph} />
-        <ContainerImages photo={emergenciesPhoto} />
+        <ContainerImages title={title} photo={emergenciesPhoto} />
       </div>
     </section>
   );

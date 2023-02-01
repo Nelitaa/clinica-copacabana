@@ -26,17 +26,17 @@ const CareAndPrevention = () => {
       <ReturnPage />
       <div className="installations-content">
         <ContainerInformation title={title} icon={careAndPreventionIcon} subTitle={subTitle} paragraph={paragraph}  paragraph2={paragraph2} />
-        <ContainerImages photo={careAndPreventionPhoto1} />
+        <ContainerImages title={title} photo={careAndPreventionPhoto1} />
       </div>
       <br />
       <div className="installations-content">
         <ContainerInformation subTitle={subTitle2} paragraph={paragraph3}  paragraph2={paragraph4} />
-        <ContainerImages photo={careAndPreventionPhoto2} />
+        <ContainerImages title={title} photo={careAndPreventionPhoto2} />
       </div>
       <br />
       <div className="installations-content">
         <ContainerInformation subTitle={subTitle3} paragraph={paragraph5}  paragraph2={paragraph6} paragraph3={paragraph7} />
-        <ContainerImages photo={careAndPreventionPhoto3} />
+        <ContainerImages title={title} photo={careAndPreventionPhoto3} />
       </div>
       <div className="schedule-appointment">
         <button type="button" className="schedule-appointment">
