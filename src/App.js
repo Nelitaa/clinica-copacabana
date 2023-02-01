@@ -10,6 +10,7 @@ import Internment from './pages/Internment';
 import Emergencies from './pages/Emergencies';
 import DiagnosticStudies from './pages/DiagnosticStudies';
 import CareAndPrevention from './pages/CareAndPrevention';
+import Admission from './pages/Admission';
 import Contact from './pages/Contact';
 import './App.css';
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/servicios/estudios-diagnosticos" element={<DiagnosticStudies />} />
         <Route path="/servicios/cuidado-y-prevencion" element={<CareAndPrevention />} />
         <Route path="/instalaciones" element={<Installations />} />
+        <Route path="/admision" element={<Admission />} />
         <Route path="/contacto" element={<Contact />} />
       </Routes>
     </div>
