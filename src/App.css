@@ -189,6 +189,52 @@ nav {
   padding: 5%;
 }
 
+/* Contact*/
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-content-left {
+  padding: 5%;
+}
+
+.contact-content-right {
+  display: flex;
+  width: 100%;
+}
+
+.contact-list-icons {
+  width: 5%;
+  height: 5%;
+  padding-right: 2%;
+}
+
+.contact-list li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 0 5% 5%;
+}
+
+.contact-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 0 0 5% 5%;
+}
+
+.contact-facebook {
+  padding: 0 5%0 5%;
+}
+
+.title-level3 {
+  color: #1c2544;
+  padding-top: 2%;
+}
+
 @media only screen and (min-width: 481px) {
   /* Header */
   .hamburger {
@@ -255,6 +301,11 @@ nav {
   .schedule-appointment button img {
     width: 100%;
   }
+
+  /* Contact*/
+  .contact-container {
+    align-items: start;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -308,6 +359,30 @@ nav {
 
   .card img {
     width: 60px;
+  }
+
+  /* Contact*/
+  .contact-container {
+    flex-direction: row;
+  }
+
+  .contact-content-left {
+    padding: 3%;
+  }
+
+  .contact-content-right {
+    display: flex;
+    width: 50%;
+  }
+
+  .contact-instagram img,
+  .contact-facebook img {
+    height: 40px;
+  }
+
+  .contact-logo {
+    width: 40%;
+    padding: 0 0 5% 5%;
   }
 }
 
