@@ -1,13 +1,12 @@
 import Card from '../components/Card';
 import queriesIcon from '../assets/services/queriesIcon.png';
-import maternity from '../assets/services/maternityIcon.png';
-import specialties from '../assets/services/specialtiesIcon.png';
-import intensiveCare from '../assets/services/intensiveCareIcon.png';
-import internment from '../assets/services/internmentIcon.png';
-import careAndPrevention from '../assets/services/careAndPreventionIcon.png';
-import emergencies from '../assets/services/emergenciesIcon.png';
-import diagnosticStudies from '../assets/services/diagnosticStudiesIcon.png';
-import '../App.css'
+import maternityIcon from '../assets/services/maternityIcon.png';
+import specialtiesIcon from '../assets/services/specialtiesIcon.png';
+import intensiveCareIcon from '../assets/services/intensiveCareIcon.png';
+import internmentIcon from '../assets/services/internmentIcon.png';
+import careAndPreventionIcon from '../assets/services/careAndPreventionIcon.png';
+import emergenciesIcon from '../assets/services/emergenciesIcon.png';
+import diagnosticStudiesIcon from '../assets/services/diagnosticStudiesIcon.png';
 
 const Services = () => {
   const cards = [
@@ -20,43 +19,43 @@ const Services = () => {
     {
       id: 2,
       title: 'Maternidad',
-      image: maternity,
+      image: maternityIcon,
       path: '/servicios/maternidad',
     },
     {
       id: 3,
       title: 'Especialidades',
-      image: specialties,
+      image: specialtiesIcon,
       path: '/servicios/especialidades',
     },
     {
       id: 4,
       title: 'Cuidados Intensivos',
-      image: intensiveCare,
+      image: intensiveCareIcon,
       path: '/servicios/cuidados-intensivos',
     },
     {
       id: 5,
       title: 'Internación',
-      image: internment,
+      image: internmentIcon,
       path: '/servicios/internacion',
     },
     {
       id: 6,
       title: 'Cuidado y Prevención',
-      image: careAndPrevention,
+      image: careAndPreventionIcon,
       path: '/servicios/cuidado-y-prevencion',
     },
     {
       id: 7,
       title: 'Emergencias',
-      image: emergencies,
+      image: emergenciesIcon,
       path: '/servicios/emergencias',
     },
     {
       id: 8,
       title: 'Estudios Diagnósticos',
-      image: diagnosticStudies,
+      image: diagnosticStudiesIcon,
       path: '/servicios/estudios-diagnosticos',
     },
   ];

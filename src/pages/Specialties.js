@@ -1,9 +1,7 @@
 import specialtiesPhoto from '../assets/services/specialtiesPhoto.png';
 import specialtiesIcon from '../assets/services/specialtiesIcon.png';
 import ReturnPage from '../components/ReturnPage';
-import ContainerInformation from '../components/ContainerInformation';
-import ContainerImages from '../components/ContainerImages';
-import '../App.css'
+import ContainerInformationImages from '../components/ContainerInformationImages';
 
 const Specialties = () => {
   const title = 'Especialidades';
@@ -12,10 +10,7 @@ const Specialties = () => {
   return (
     <section className="installations-container">
       <ReturnPage />
-      <div className="installations-content">
-        <ContainerInformation title={title} icon={specialtiesIcon} list={list} />
-        <ContainerImages title={title} photo={specialtiesPhoto} />
-      </div>
+      <ContainerInformationImages title={title} icon={specialtiesIcon} list={list} photo={specialtiesPhoto} />
     </section>
   );
 }
