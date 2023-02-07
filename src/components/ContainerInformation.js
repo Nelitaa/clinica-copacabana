@@ -8,8 +8,7 @@ const ContainerInformation = (props) => {
   return (
   <div className="container-information">
     <Title title={title} icon={icon} />
-    {/* <img className={logo ? "logo-icon" : "hide"} src={logo} alt={title} />
-    <h3 className={subTitle ? "subTitle-information" : "hide"}>{subTitle}</h3> */}
+    {/* <img className={logo ? "logo-icon" : "hide"} src={logo} alt={title} /> */}
     <div>{paragraph ? <Paragraphs paragraphs={paragraph} /> : null}</div>
   </div>
   );

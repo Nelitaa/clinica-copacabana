@@ -8,7 +8,9 @@ const ContainerImages = (props) => {
   return (
     <div className="images-container">
       <ContainerImagesTop title={title} photo={photo} />
-      <ContainerImagesBottom iconContact={iconContact} />
+      <div className={iconContact ? 'schedule-appointment' : 'hide'}>
+        <ContainerImagesBottom iconContact={iconContact} />
+      </div>
     </div>
   );
 };
