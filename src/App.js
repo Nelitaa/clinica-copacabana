@@ -9,11 +9,11 @@ import Internment from './pages/Internment';
 import Emergencies from './pages/Emergencies';
 import DiagnosticStudies from './pages/DiagnosticStudies';
 import CareAndPrevention from './pages/CareAndPrevention';
-// import Plans from './pages/Plans';
-// import Admission from './pages/Admission';
-// import Contact from './pages/Contact';
+import Plans from './pages/Plans';
+import Installations from './pages/Installations';
+import Admission from './pages/Admission';
+import Contact from './pages/Contact';
 // import History from './pages/History';
-// import Installations from './pages/Installations';
 import './App.css';
 
 function App() {
@@ -30,11 +30,11 @@ function App() {
         <Route path="/servicios/emergencias" element={<Emergencies />} />
         <Route path="/servicios/estudios-diagnosticos" element={<DiagnosticStudies />} />
         <Route path="/servicios/cuidado-y-prevencion" element={<CareAndPrevention />} />
-        {/* <Route path="/instalaciones" element={<Installations />} />
         <Route path="/planes" element={<Plans />} /> 
+        <Route path="/instalaciones" element={<Installations />} />
         <Route path="/admision" element={<Admission />} /> 
         <Route path="/contacto" element={<Contact />} /> 
-        <Route path="/nuestra-historia" element={<History />} />  */}
+        {/* <Route path="/nuestra-historia" element={<History />} />  */}
       </Routes>
     </div>
   );
