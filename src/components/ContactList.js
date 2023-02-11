@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
 import FacebookInstagram from './FacebookInstagram';
 import CochabambaBolivia from './CochabambaBolivia';
+import WhatsappButton from './WhatsappButton';
 
 const ContactList = (props) => {
-  const { mailIcon, phoneIcon, whatsappButton, facebookIcon, instagramIcon, locationIcon } = props;
+  const { mailIcon, phoneIcon, whatsappButton, facebookIcon, instagramIcon, locationIcon, title } = props;
 
   return (
     <ul className="contact-list" >
@@ -18,19 +19,13 @@ const ContactList = (props) => {
           <p>+591 (4) 4487257</p>
         </div>
       </li>
-      <li className={whatsappButton ? '' : 'hide'}>
-        <a href="https://wa.me/59179959570" target="_blank" rel="noreferrer">
-          <img src={whatsappButton} alt="Botón de whatsapp" className="contact-logo" />
-        </a>
-      </li>
+      <li>{whatsappButton ? <WhatsappButton whatsappButton={whatsappButton}/> : null}</li>
       <li>
         <img className="contact-list-icons" src={mailIcon} alt="Icono de correo electrónico" />
         <p>informaciones@clinicacopacabana.com</p>
       </li>
-      <li className={facebookIcon ? '' : 'hide'}>
-        <FacebookInstagram facebookIcon={facebookIcon} instagramIcon={instagramIcon} />
-      </li>
-      <li>{whatsappButton ? <CochabambaBolivia /> : null}</li>
+      <li>{facebookIcon && instagramIcon ? <FacebookInstagram facebookIcon={facebookIcon} instagramIcon={instagramIcon} /> : null}</li>
+      <li>{whatsappButton ? <CochabambaBolivia title={title}/> : null}</li>
     </ul>
   );
 }
@@ -40,8 +35,9 @@ export default ContactList;
 ContactList.propTypes = {
   mailIcon: PropTypes.string.isRequired,
   phoneIcon: PropTypes.string.isRequired,
-  whatsappButton: PropTypes.string.isRequired,
-  facebookIcon: PropTypes.string.isRequired,
-  instagramIcon: PropTypes.string.isRequired,
+  whatsappButton: PropTypes.string,
+  facebookIcon: PropTypes.string,
+  instagramIcon: PropTypes.string,
   locationIcon: PropTypes.string.isRequired,
+  title: PropTypes.string,
 };

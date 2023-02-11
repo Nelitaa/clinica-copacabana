@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png';
-import facebook from '../assets/facebook.png';
-import instagram from '../assets/instagram.png';
-import hamburger from '../assets/hamburger.png';
+import logo from '../assets/header-footer/logo.png';
+import facebook from '../assets/header-footer/facebook.png';
+import instagram from '../assets/header-footer/instagram.png';
+import hamburger from '../assets/header-footer/hamburger.png';
+import Logo from './Logo';
+import FacebookInstagram from './FacebookInstagram';
 
 const Header = () => {
   const links = [
@@ -42,7 +44,7 @@ const Header = () => {
     <header>
       <nav>
         <Link to="/" className='logo'>
-          <img src={logo} alt="logo Clínica Copacabana" />
+          <Logo logo={logo} />
         </Link>
         <button type="button" className='hamburger'>
           <img src={hamburger} alt="menu icon" />
@@ -53,12 +55,9 @@ const Header = () => {
               <Link to={link.path}>{link.name}</Link>
             </li>
           ))}
-          <Link to="https://www.facebook.com/clinicacopacabana" className='facebook'>
-            <img src={facebook} alt="facebook icon" />
-          </Link>
-          <Link to="https://instagram.com/clinicacopacabanabolivia?igshid=YmMyMTA2M2Y=" className='instagram'>
-            <img src={instagram} alt="instagram icon" />
-          </Link>
+          <li>
+            <FacebookInstagram facebookIcon={facebook} instagramIcon={instagram} />
+          </li>
         </ul>
       </nav>
     </header>

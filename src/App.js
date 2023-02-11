@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
+import Home from './pages/Home';
 import Services from './pages/Services';
 import Queries from './pages/Queries';
 import Maternity from './pages/Maternity';
@@ -13,7 +14,8 @@ import Plans from './pages/Plans';
 import Installations from './pages/Installations';
 import Admission from './pages/Admission';
 import Contact from './pages/Contact';
-// import History from './pages/History';
+import History from './pages/History';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
     <div>
       <Header />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/servicios" element={<Services />} />
         <Route path="/servicios/consultas" element={<Queries />} />
         <Route path="/servicios/maternidad" element={<Maternity />} />
@@ -34,8 +37,9 @@ function App() {
         <Route path="/instalaciones" element={<Installations />} />
         <Route path="/admision" element={<Admission />} /> 
         <Route path="/contacto" element={<Contact />} /> 
-        {/* <Route path="/nuestra-historia" element={<History />} />  */}
+        <Route path="/nuestra-historia" element={<History />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

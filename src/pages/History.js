@@ -1,9 +1,10 @@
 import historyPhoto2 from '../assets/history/historyPhoto2.png';
 import missionIcon from '../assets/history/missionIcon.png';
-import viewIcon from '../assets/history/viewIcon.png';
+import visionIcon from '../assets/history/viewIcon.png';
 import ReturnPage from '../components/ReturnPage';
 import MissionVision from '../components/MissionVision';
 import Paragraphs from '../components/Paragraphs';
+import Title from '../components/Title';
 
 const History = () => {
   const missionParagraph = ['Proporcionar servicios de salud con los mejores recursos de infraestructura, humanos y tecnológicos a la población, para una asistencia médica completa, eficiente, oportuna y humana, con el fin de contribuir en la mejora de la salud y el estándar de vida de nuestra sociedad. Desempeñar obras de ayuda social y promover la invertigación científica en medicina.'];
@@ -20,13 +21,13 @@ const History = () => {
     <div>
       <div className='front-page-history-container'>
         <ReturnPage />
-        <h1 className='title'>Nuestra Historia</h1>
+        <Title title='Nuestra Historia' />
       </div>
       <div className='history-mission-vision-container'>
         <img src={historyPhoto2} alt="Fotografía del Dr. Humberto Román Orellana" />
         <div className='mission-vision-container'>
           <MissionVision title='Misión' icon={missionIcon} paragraph={missionParagraph} />
-          <MissionVision title='Visión' icon={viewIcon} paragraph={visionParagraph} />
+          <MissionVision title='Visión' icon={visionIcon} paragraph={visionParagraph} />
         </div>
       </div>
       <Paragraphs paragraphs={paragraphs} />

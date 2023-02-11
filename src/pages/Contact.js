@@ -18,7 +18,7 @@ const Contact = () => {
       <div className="contact-content-left">
         <Title title={title} />
         <Logo title={title} logo={logo2} />
-        <ContactList locationIcon={locationIcon} phoneIcon={phoneIcon} mailIcon={mailIcon} whatsappButton={whatsappButton} facebookIcon={facebookIcon2} instagramIcon={instagramIcon2} />
+        <ContactList title={title} locationIcon={locationIcon} phoneIcon={phoneIcon} mailIcon={mailIcon} whatsappButton={whatsappButton} facebookIcon={facebookIcon2} instagramIcon={instagramIcon2} />
       </div>
       <img src={contactPhoto} alt="Foto de contacto" className="contact-content-right" />
     </section>

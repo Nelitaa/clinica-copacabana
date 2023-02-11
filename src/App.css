@@ -287,6 +287,19 @@ nav {
   padding-right: 2%;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1c2544;
+  padding: 5%;
+  color : #fff;
+}
+
+.title-level3-white {
+  color : #fff;
+}
+
 @media only screen and (min-width: 481px) {
   /* Header */
   .hamburger {
