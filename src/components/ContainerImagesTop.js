@@ -6,10 +6,10 @@ const ContainerImagesTop = (props) => {
   const { title, photo } = props;
 
   return (
-    <div>
-      <img className={title === 'Instalaciones' ? '' : 'hide'} src={arrowLeft} alt="Fecha" />
-      <img className="photos" src={photo} alt={`Fotos de ${title}`} />
-      <img className={title === 'Instalaciones' ? '' : 'hide'} src={arrowRight} alt="Fecha" />
+    <div className='container-images-top'>
+      <img className={title === 'Instalaciones' ? 'arrow-images' : 'hide'} src={arrowLeft} alt='Fecha' />
+      <img className='photos' src={photo} alt={`Fotos de ${title}`} />
+      <img className={title === 'Instalaciones' ? 'arrow-images' : 'hide'} src={arrowRight} alt='Fecha' />
     </div>
   );
 };

@@ -7,7 +7,7 @@ const Paragraphs = ({ paragraphs }) => {
       {paragraphs.map((paragraph, index) => {
         switch (typeof paragraph) {
           case 'string':
-            return <p className={paragraph.includes('.') || paragraph.includes(':') ? '' : 'subTitle-information'} key={index}>{paragraph}</p>;
+            return <p className={paragraph.includes('.') || paragraph.includes(':') ? 'information-paragraph' : 'subTitle-information'} key={index}>{paragraph}</p>;
           case 'object':
             return <List key={index} list={paragraph} />;
           default:

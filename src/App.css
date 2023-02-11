@@ -34,7 +34,7 @@ nav {
   padding:  5% 0 5% 0;
 }
 
-.icon-contact,
+.icon-contact a img,
 .logo img {
   width: 50%;
 }
@@ -129,8 +129,9 @@ nav {
 /* ok Whatsapp Button */
 .contact_button {
   display: flex;
-  width: 100px;
-  cursor: pointer;
+  width: 140px;
+  padding-left: 5%;
+  padding-bottom: 5%;
 }
 
 /* Installations */
@@ -140,6 +141,22 @@ nav {
   padding: 5%;
   color: #7c8a9e;
 }
+
+.container-images-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-images {
+  height: 30px;
+}
+
+.information-paragraph {
+  padding-bottom: 5%;
+}
+
 
 /* Return Page */
 .return-container {
@@ -170,7 +187,7 @@ nav {
 
 .subTitle-admission,
 .subTitle-information {
-  font-size: x-large;
+  font-size: medium;
   font-weight: bold;
   color: #ef8026;
   padding-bottom: 2%;
@@ -194,7 +211,7 @@ nav {
 }
 
 .title {
-  font-size: xx-large;
+  font-size: x-large;
   font-weight: bold;
   color: #1c2544;
 }
@@ -206,6 +223,7 @@ nav {
 /* Container Images */
 .images-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -216,7 +234,8 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 90%;
+  padding-top: 5%;
 }
 
 /* Services */
@@ -279,7 +298,7 @@ nav {
   flex-direction: column;
   list-style-type: disc;
   padding-left: 5%;
-  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .list-information li::marker {
@@ -298,6 +317,10 @@ nav {
   padding: 5%;
 }
 
+.schedule-appointment img {
+  width: 100%;
+}
+
 /* Contact*/
 .contact-container {
   display: flex;
@@ -307,6 +330,7 @@ nav {
 
 .contact-content-left {
   padding: 5%;
+  width: 100%;
 }
 
 .contact-content-right {
@@ -335,13 +359,22 @@ nav {
   padding: 0 0 5% 5%;
 }
 
-.contact-facebook {
-  padding: 0 5%0 5%;
+.facebook-instagram-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 20px;
+  padding-left: 5%;
+}
+
+.contact-facebook img,
+.contact-instagram img {
+  width: auto;
+  height: 30px;
 }
 
 .title-level3 {
   color: #1c2544;
-  padding-top: 2%;
 }
 
 /* Admission page */
@@ -398,6 +431,22 @@ footer {
 
 .title-level3-white {
   color : #fff;
+  font-size: smaller;
+}
+
+/* Footer */
+.footer_contact {
+  display: none;
+}
+
+.footer_logo_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-footer {
+  width: 50%;
 }
 
 @media only screen and (min-width: 481px) {
@@ -417,7 +466,7 @@ footer {
     justify-content: end;
     align-items: center;
     background-color: #fff;
-    width: 30%;
+    width: 25%;
     padding: 1%;
   }
 
@@ -467,8 +516,7 @@ footer {
   }
 
   .schedule-appointment button {
-    width: 50%;
-    height: 50px;
+    width: 60%;
     border: none;
   }
 
@@ -479,6 +527,11 @@ footer {
   /* Contact*/
   .contact-container {
     align-items: start;
+  }
+  .contact-facebook img,
+  .contact-instagram img {
+    width: auto;
+    height: 18px;
   }
 }
 
@@ -496,7 +549,7 @@ footer {
 
   /* Home */
   .container_cards_home {
-    column-gap: 5%;
+    column-gap: 3%;
   }
 
   .card_home img {
@@ -504,7 +557,7 @@ footer {
   }
 
   .contact_button {
-    width: 250px;
+    width: 200px;
   }
 
   .card_home h3 {
@@ -534,6 +587,12 @@ footer {
     flex-direction: column !important;
   }
 
+  /* Title */
+  .icon-title {
+    width: 50px;
+    height: 50px;
+  }
+
   /* Installations */
   .title-orange {
     font-size: 1.8rem;
@@ -543,21 +602,21 @@ footer {
   .installations-content {
     display: flex;
     flex-direction: row;
-    padding-right: 5%;
   }
 
   /* Container information */
   .container-information {
-    width: 50%;
+    width: 40%;
     padding: 0% 5% 5% 5%;
   }
 
   /* Container Images */
-.images-container {
-  flex-direction: column;
-  row-gap: 5%;
-  width: 50%;
-}
+  .images-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 5%;
+    width: 50%;
+  }
 
   /* Return Page */
   .return-container {
@@ -596,13 +655,9 @@ footer {
     width: 50%;
   }
 
-  .contact-instagram img,
-  .contact-facebook img {
-    height: 40px;
-  }
-
   .contact-logo {
-    width: 40%;
+    width: 50%;
+    height: auto;
     padding: 0 0 5% 5%;
   }
 
@@ -623,6 +678,36 @@ footer {
     flex-direction: row;
     justify-content: center;
     padding: 2%;
+  }
+
+  /* Footer */
+  .footer_contact {
+    display: flex;
+  }
+
+  .footer_contact li {
+    padding: 0;
+    font-size: small;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 5% 3% 5%;
+  }
+
+  .footer_logo_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-facebook img,
+  .contact-instagram img {
+    width: auto;
+    height: 30px;
   }
 }
 
@@ -700,22 +785,18 @@ footer {
     padding-bottom: 5%;
   }
 
-  /* Care and Protection*/
-  .schedule-appointment {
-    justify-content: end;
-    padding: 1%;
+  /* Title */
+  .icon-title {
+    width: 60px;
+    height: 60px;
   }
 
-  .schedule-appointment button {
-    width: 30%;
+  /* Footer */
+  footer {
+    padding: 3% 10% 3% 10%;
   }
-}
 
-
-.facebook-instagram-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 5%;
+  .card_home h3 {
+    font-size: medium;
+  }
 }

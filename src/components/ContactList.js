@@ -19,13 +19,13 @@ const ContactList = (props) => {
           <p>+591 (4) 4487257</p>
         </div>
       </li>
-      <li>{whatsappButton ? <WhatsappButton whatsappButton={whatsappButton}/> : null}</li>
+      <span>{whatsappButton ? <WhatsappButton whatsappButton={whatsappButton}/> : null}</span>
       <li>
         <img className="contact-list-icons" src={mailIcon} alt="Icono de correo electrónico" />
         <p>informaciones@clinicacopacabana.com</p>
       </li>
-      <li>{facebookIcon && instagramIcon ? <FacebookInstagram facebookIcon={facebookIcon} instagramIcon={instagramIcon} /> : null}</li>
-      <li>{whatsappButton ? <CochabambaBolivia title={title}/> : null}</li>
+      <span>{facebookIcon && instagramIcon ? <FacebookInstagram facebookIcon={facebookIcon} instagramIcon={instagramIcon} /> : null}</span>
+      <span>{whatsappButton ? <CochabambaBolivia title={title}/> : null}</span>
     </ul>
   );
 }

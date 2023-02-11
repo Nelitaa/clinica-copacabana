@@ -14,10 +14,16 @@ const Footer = () => {
 
   return (
     <footer>
-    <ContactList mailIcon={mailIcon} phoneIcon={phoneIcon} locationIcon={locationIcon} />
-    <Logo logo={logoWhite} />
-    <CochabambaBolivia title={title} />
-    <FacebookInstagram facebookIcon={facebookIcon} instagramIcon={instagramIcon} />
+      <div className="footer_contact">
+        <ContactList mailIcon={mailIcon} phoneIcon={phoneIcon} locationIcon={locationIcon} />
+      </div>
+      <div className="footer_logo_container">
+        <Logo title={title} logo={logoWhite} />
+        <CochabambaBolivia title={title} />
+      </div>
+      <div className="footer_contact">
+        <FacebookInstagram facebookIcon={facebookIcon} instagramIcon={instagramIcon} />
+      </div>
   </footer>
   );
 }

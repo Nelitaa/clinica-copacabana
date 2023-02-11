@@ -6,7 +6,7 @@ const Title = (props) => {
   return (
     <div className='container-title'>
       <img className={icon ? 'icon-title' : 'hide'} src={icon} alt={title} />
-      <h2 className={title === 'Pacientes Asegurados' || 'Tomografía computarizada' ? 'title-orange' : 'title'}>{title}</h2>
+      <h2 className={title === 'Tomografía computarizada' ? 'title-orange' : 'title'}>{title}</h2>
     </div>
   );
 }
