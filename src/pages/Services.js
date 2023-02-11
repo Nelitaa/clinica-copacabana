@@ -15,59 +15,68 @@ const Services = () => {
       title: 'Consultas',
       image: queriesIcon,
       path: '/servicios/consultas',
+      section: 'services',
     },
     {
       id: 2,
       title: 'Maternidad',
       image: maternityIcon,
       path: '/servicios/maternidad',
+      section: 'services',
     },
     {
       id: 3,
       title: 'Especialidades',
       image: specialtiesIcon,
       path: '/servicios/especialidades',
+      section: 'services',
     },
     {
       id: 4,
       title: 'Cuidados Intensivos',
       image: intensiveCareIcon,
       path: '/servicios/cuidados-intensivos',
+      section: 'services',
     },
     {
       id: 5,
       title: 'Internación',
       image: internmentIcon,
       path: '/servicios/internacion',
+      section: 'services',
     },
     {
       id: 6,
       title: 'Cuidado y Prevención',
       image: careAndPreventionIcon,
       path: '/servicios/cuidado-y-prevencion',
+      section: 'services',
     },
     {
       id: 7,
       title: 'Emergencias',
       image: emergenciesIcon,
       path: '/servicios/emergencias',
+      section: 'services',
     },
     {
       id: 8,
       title: 'Estudios Diagnósticos',
       image: diagnosticStudiesIcon,
       path: '/servicios/estudios-diagnosticos',
+      section: 'services',
     },
   ];
 
   return (
-    <section className="services-container">
+    <section className='services-container'>
         {cards.map((card) => (
           <Card
             key={card.id}
             title={card.title}
             image={card.image}
             path={card.path}
+            section={card.section}
           />
         ))}
     </section>

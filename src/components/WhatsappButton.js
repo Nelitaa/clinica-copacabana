@@ -2,8 +2,8 @@ import propTypes from 'prop-types';
 
 const WhatsappButton = ({ whatsappButton }) => {
   return (
-    <a href="https://wa.me/59179959570" target="_blank" rel="noreferrer">
-      <img src={whatsappButton} alt="Botón de whatsapp" className="contact-logo" />
+    <a href='https://wa.me/59179959570' target='_blank' rel='noreferrer'>
+      <img className='contact_button' src={whatsappButton} alt='Botón de contacto' />
     </a>
   );
 };

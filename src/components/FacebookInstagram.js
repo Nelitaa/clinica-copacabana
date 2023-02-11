@@ -4,7 +4,7 @@ const FacebookInstagram = (props) => {
   const { facebookIcon, instagramIcon } = props;
 
   return (
-    <div>
+    <div className="facebook-instagram-container">
       <a className="contact-facebook" href="https://www.facebook.com/clinicacopacabana" target="_blank" rel="noreferrer">
         <img src={facebookIcon} alt="Icono de facebook" />
       </a>

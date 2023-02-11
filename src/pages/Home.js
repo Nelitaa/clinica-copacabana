@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import WhatsappButton from "../components/WhatsappButton";
-import whatsappButton from "../assets/home/whatsappButton.png";
-import callImage from "../assets/home/callImage.png";
+import WhatsappButton from '../components/WhatsappButton';
+import whatsappButton from '../assets/home/whatsappButton.png';
+import callImage from '../assets/home/callImage.png';
 import arrowLeft from '../assets/icons/arrowLeft.png';
 import arrowRight from '../assets/icons/arrowRight.png';
 import homeImage from '../assets/home/homeImage.png';
@@ -45,36 +45,41 @@ const Home = () => {
 
   return (
     <section>
-      <div>
-        <div>
+      <div className='container_top_home'>
+        <div className='container_top_home_black'>
           <p>Más de <span>68 años </span>cuidando a los Cochabambinos</p>
           <button type="button">
-            <Link to="/nuestra-historia">Nuestra historia</Link>
+            <Link to='/nuestra-historia'>Nuestra historia</Link>
           </button>
         </div>
+        <div className='container_cards_home'>
+          {cards.map((card) => (
+              <Card
+                key={card.id}
+                title={card.title}
+                image={card.image}
+                path={card.path}
+              />
+            ))}
+        </div>
       </div>
-      <div>
-        {cards.map((card) => (
-            <Card
-              key={card.id}
-              title={card.title}
-              image={card.image}
-              path={card.path}
-            />
-          ))}
+      <div className='container_contact_home'>
+        <WhatsappButton whatsappButton={whatsappButton} />
+        <img className='contact_button' src={callImage} alt='Línea de Emergencia' />     
       </div>
-      <WhatsappButton whatsappButton={whatsappButton} />
-      <img src={callImage} alt="Linea de Emergencia" />
-      <div>
-        <img src={arrowLeft} alt="Fecha" />
-          <div>
-            <img src={homeImage} alt="Tomografía computarizada" />
+      <div className='container_home_bottom'>
+        <img src={arrowLeft} alt='Fecha' />
+          <div className='container_home_box' >
             <div>
-              <Title title={title} />
-              <Paragraphs paragraphs={paragraph} />
+              <img src={homeImage} alt='Tomografía computarizada' />
+              <div className='container_home_title_paragraph'>
+                <Title title={title} />
+                <Paragraphs paragraphs={paragraph} />
+              </div>
             </div>
+            <div className='orange-line'></div>
           </div>
-        <img src={arrowRight} alt="Fecha" />
+        <img src={arrowRight} alt='Fecha' />
       </div>
     </section>
   );
