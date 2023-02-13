@@ -20,8 +20,10 @@ const History = () => {
   return (
     <div>
       <div className='front-page-history-container'>
-        <ReturnPage />
-        <Title title='Nuestra Historia' />
+        <div>
+          <ReturnPage />
+        </div>
+        <h1>Nuestra Historia</h1>
       </div>
       <div className='history-mission-vision-container'>
         <img src={historyPhoto2} alt="Fotografía del Dr. Humberto Román Orellana" />
@@ -30,7 +32,9 @@ const History = () => {
           <MissionVision title='Visión' icon={visionIcon} paragraph={visionParagraph} />
         </div>
       </div>
-      <Paragraphs paragraphs={paragraphs} />
+      <div className="paragraph-container">
+        <Paragraphs paragraphs={paragraphs} />
+      </div>
     </div>
   );
 };

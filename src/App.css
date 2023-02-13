@@ -71,7 +71,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   background-color: #1c2544;
-  opacity: 0.7;
   color: #fff;
   height: 70px;
   width: 150px;
@@ -154,7 +153,7 @@ nav {
 }
 
 .information-paragraph {
-  padding-bottom: 5%;
+  padding-bottom: 20px;
 }
 
 
@@ -171,11 +170,27 @@ nav {
   border: none;
   font-size: x-small;
   color: #7c8a9e;
+  background-color: transparent;
 }
 
 .return-container button img {
   width: 20px;
   padding-right: 5%;
+}
+
+.front-page-history-container div {
+  padding: 1%;
+  height: 5%;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1c2544;
 }
 
 /* Container Information */
@@ -391,18 +406,11 @@ nav {
 }
 
 /* Our History page */
-.front-page-history-container {
-  background-image: url(./assets/history/historyPhoto.png);
-  opacity: 0.5;
-  background-size: cover;
-  height: 50vh;
-  width: 100%;
-}
-
 .history-mission-vision-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  column-gap: 5%;
+  column-gap: 13%;
   padding: 5%;
 }
 
@@ -417,7 +425,13 @@ nav {
 }
 
 .mission-vision img {
-  padding-right: 2%;
+  padding-right: 5%;
+  width: 50px;
+  height: 50px;
+}
+
+.paragraph-container {
+  padding: 0 5% 5% 5%;
 }
 
 footer {
@@ -446,6 +460,10 @@ footer {
 }
 
 .logo-footer {
+  width: 50%;
+}
+
+.history-mission-vision-container img {
   width: 50%;
 }
 
@@ -533,9 +551,32 @@ footer {
     width: auto;
     height: 18px;
   }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .history-mission-vision-container img {
+    width: 40%;
+  }
+
+  .mission-vision img {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
+  .front-page-history-container {
+    background-image: url(./assets/history/historyPhoto.png);
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   /* Header */
   .list-links li {
     padding-right: 2%;
@@ -709,6 +750,24 @@ footer {
     width: auto;
     height: 30px;
   }
+
+  .history-mission-vision-container {
+    column-gap: 5%;
+  }
+
+  .mission-vision-container img {
+    height: 70px;
+    width: 70px;
+  }
+
+  .history-mission-vision-container {
+    flex-direction: row;
+  }
+
+  .mission-vision img {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -798,5 +857,18 @@ footer {
 
   .card_home h3 {
     font-size: medium;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .history-mission-vision-container img {
+    width: 25%;
+  }
+
+  .mission-vision img {
+    width: 100px;
+    height: 100px;
   }
 }
