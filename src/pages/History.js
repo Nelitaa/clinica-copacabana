@@ -18,7 +18,7 @@ const History = () => {
   ];
 
   return (
-    <div>
+    <div className="contact-container">
       <div className='front-page-history-container'>
         <div>
           <ReturnPage />

@@ -44,7 +44,7 @@ const Header = () => {
     <header>
       <nav>
         <Link to="/" className='logo'>
-          <img src={logo} alt="Logo" />
+          <img className="logo-header" src={logo} alt="Logo" />
         </Link>
         <button type="button" className='hamburger'>
           <img src={hamburger} alt="menu icon" />

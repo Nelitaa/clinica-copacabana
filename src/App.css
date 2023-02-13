@@ -11,6 +11,7 @@ a {
   text-decoration: none;
   color: #fff;
   cursor: pointer;
+  transition: all 0.8s ease-out;
 }
 
 a:hover {
@@ -23,7 +24,55 @@ button {
   border: none;
 }
 
+.card:hover,
+.card_home:hover {
+  transition: all 0.8s ease-out;
+  background-color: #1c2544;
+}
+
+.card h3:hover,
+.card_home h3:hover {
+  color: #fff;
+  transition: all 0.8s ease-out;
+}
+
+
+.button_history:hover {
+  -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+  box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+}
+
+.button_history a:hover {
+  color: #1c2544;
+}
+
+.contact_button:hover,
+.logo-header:hover,
+.schedule-appointment img:hover {
+  opacity: 0.3;
+}
+
+.return-container p:hover {
+  color: #ef8026;
+  transition: all 0.8s ease-out;
+  font-size: medium;
+}
+
+hr {
+  width: 0.1vw;
+  height: 3vh;
+  background-color: #fff;
+  border-color: transparent;
+}
+
 /* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -70,7 +119,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #1c2544;
+  background-color: rgb(28,37,68, 0.6);
   color: #fff;
   height: 70px;
   width: 150px;
@@ -137,7 +186,7 @@ nav {
 .installations-container {
   display: flex;
   flex-direction: column;
-  padding: 5%;
+  padding: 150px 5% 5% 5%;
   color: #7c8a9e;
 }
 
@@ -259,6 +308,12 @@ h1 {
   flex-direction: column;
   align-items: center;
   padding: 5%;
+  margin-top: 100px;
+}
+
+.contact-container,
+.home-container {
+  padding-top: 100px;
 }
 
 /* Cards */
@@ -378,7 +433,7 @@ h1 {
   display: flex;
   justify-content: start;
   align-items: center;
-  column-gap: 20px;
+  column-gap: 15px;
   padding-left: 5%;
 }
 

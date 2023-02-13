@@ -44,11 +44,11 @@ const Home = () => {
   ];
 
   return (
-    <section>
+    <section className='home-container'>
       <div className='container_top_home'>
         <div className='container_top_home_black'>
           <p>Más de <span>68 años </span>cuidando a los Cochabambinos</p>
-          <button type="button">
+          <button className='button_history' type='button'>
             <Link to='/nuestra-historia'>Nuestra historia</Link>
           </button>
         </div>
