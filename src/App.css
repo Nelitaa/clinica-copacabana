@@ -30,8 +30,8 @@ button {
   background-color: #1c2544;
 }
 
-.card h3:hover,
-.card_home h3:hover {
+.card:hover h3,
+.card_home:hover h3 {
   color: #fff;
   transition: all 0.8s ease-out;
 }
@@ -46,6 +46,8 @@ button {
   color: #1c2544;
 }
 
+.contact-facebook:hover img,
+.contact-instagram:hover img,
 .contact_button:hover,
 .logo-header:hover,
 .schedule-appointment img:hover {
@@ -71,6 +73,8 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  height: 200px;
+  z-index: 10;
 }
 
 nav {
@@ -186,7 +190,7 @@ nav {
 .installations-container {
   display: flex;
   flex-direction: column;
-  padding: 150px 5% 5% 5%;
+  padding: 11% 5% 5% 5%;
   color: #7c8a9e;
 }
 
@@ -442,6 +446,7 @@ h1 {
   width: auto;
   height: 30px;
 }
+
 
 .title-level3 {
   color: #1c2544;
